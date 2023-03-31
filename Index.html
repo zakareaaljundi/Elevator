@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="./MyStyle.css">
+</head>
+<body>
+    <div class="elevator_container">
+        <div class="the_elevator">
+            <span class="elevator_door"></span>
+            <span class="elevator_back"></span>
+            <span class="elevator_underDoorBack"></span>
+            <span class="elevator_underDoor"></span>
+            <span class="elevator_counter"></span>
+            <div class="buttons_container" style="left: 77px; width: 20px; top: 15px; z-index: 11;">
+                <!-- <button data-id="theDoor" style="padding: 0;">&lt;||&gt;</button> -->
+                <button data-id="0_floor" style="padding: 0;">0</button>
+                <button data-id="1_floor" style="padding: 0;">1</button>
+                <button data-id="2_floor" style="padding: 0;">2</button>
+                <button data-id="3_floor" style="padding: 0;">3</button>
+            </div>
+        </div>
+        <div class="ground_floor" data-id="0_floor" data-position="0">
+            <div class="floors_door"></div>
+            <div class="floor_wall">
+                <div class="lamps_container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="ground_floor_paragraph">Ground Floor</p>
+                <div class="buttons_container">
+                    <button data-id="0_floor">&lt;||&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="first_floor" data-id="1_floor" data-position="1">
+            <div class="floors_door"></div>
+            <div class="floor_wall">
+                <div class="lamps_container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="first_floor_paragraph">First Floor</p>
+                <div class="buttons_container">
+                    <button data-id="1_floor">&lt;||&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="second_floor" data-id="2_floor" data-position="2">
+            <div class="floors_door"></div>
+            <div class="floor_wall">
+                <div class="lamps_container">
+                    <span></span>
+                    <span></span>
+                    
+                    <span></span>
+                </div>
+                <p class="second_floor_paragraph">Second Floor</p>
+                <div class="buttons_container">
+                    <button data-id="2_floor">&lt;||&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="third_floor" data-id="3_floor" data-position="3">
+            <div class="floors_door"></div>
+            <div class="floor_wall">
+                <div class="lamps_container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="third_floor_paragraph">Third Floor</p>
+                <div class="buttons_container">
+                    <button data-id="3_floor">&lt;||&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+</html>
